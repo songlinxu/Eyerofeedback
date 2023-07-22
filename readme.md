@@ -11,6 +11,8 @@ This code is used to replicate the results, analysis and figures in the paper na
 
 ## Steps to Replicate the Results and Figures in the Paper
 
+- Download gaze data from [here](https://drive.google.com/file/d/15nFU209As_d3IHG9erc7IfIu_Bdjwd-7/view?usp=sharing) and [here](https://drive.google.com/file/d/1zOsSbQPnWU-mQOlOUGsJ5Da9KZu0t2ZO/view?usp=sharing).
+
 Run the code block one by one in order to process the raw dataset and plot figures.
 
 
