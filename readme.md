@@ -1,6 +1,6 @@
-# Tactile Bodily Gaze Map Could Regulate Human Attention
+# Tactile Bodily Gaze Mapping Could Regulate Human Attention
 
-This code is used to replicate the results, analysis and figures in the paper named "Tactile Bodily Gaze Map Redirects User Attention". For arXiv version of this paper, see here. 
+This code is used to replicate the results, analysis and figures in the paper named "Tactile Bodily Gaze Mapping Could Regulate Human Attention". For arXiv version of this paper, see here. 
 
 ## File Structure
 
