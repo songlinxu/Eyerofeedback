@@ -267,7 +267,7 @@ def visual_radar(data,hue,color_dict,step = 3):
 
 
 def visual_gaze(gaze_all_file,user_id,tail='raw'):
-    # warning: this code function is only suitable for one user. Otherwise theere will be problems in gaze resample.
+    # warning: this code function is only suitable for one user, not multiple users together. 
     gaze_data_all = pd.read_csv(gaze_all_file)
     color_dict = {'none':'b','filtered':'g','static':'r'}
     user_table_select = gaze_data_all[gaze_data_all['user_id']==user_id]
@@ -276,7 +276,7 @@ def visual_gaze(gaze_all_file,user_id,tail='raw'):
         for j,distraction in enumerate(['with distraction', 'no distraction']):
             for k,feedback in enumerate(['none','static','filtered']):
                 gaze_data_select = user_table_select[(user_table_select['duration_text']==duration)&(user_table_select['condition_text']==distraction)&(user_table_select['threshold_text']==feedback)]
-                gaze_data_select = _gaze_resample(gaze_data_select)
+
                 x_data = gaze_data_select['gaze_x_'+tail]
                 y_data = gaze_data_select['gaze_y_'+tail]
                 
@@ -315,28 +315,7 @@ def plot_box(data_csv,datatype = 'resptime'):
     plt.show()
 
 
-def _gaze_resample(gaze_data,frequency = 1):
-    # generate resampled data to different frequency
-    gaze_array = np.array(gaze_data)
-    header = gaze_data.columns.values
-    time_start = gaze_data['webstamp'].values[0]
-    time_end = gaze_data['webstamp'].values[-1]
-    time_interval = 1.0/frequency
-    point_num = int((time_end - time_start)/time_interval)
-    time_list = list(gaze_data['webstamp'])
-    gaze_data_new = pd.DataFrame(columns = header)
-    found_index_list = []
-    for i in range(point_num):
-        time_point = time_start + i*time_interval
-        index = find_nearest(time_list,time_point)
-        if index in found_index_list: continue
-        array_piece = gaze_array[index]
-        array_piece = array_piece.reshape((1,len(array_piece)))
-        table_piece = pd.DataFrame(array_piece,columns = header)
-        gaze_data_new = pd.concat([gaze_data_new,table_piece],axis=0)
-        found_index_list.append(index)
-    # gaze_data_new.to_csv('data/delete/gaze_resampled.csv',index=False)
-    return gaze_data_new
+
 
 def func_limit_arr(input_arr, max_value, min_value):
     new_arr = []
