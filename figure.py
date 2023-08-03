@@ -23,8 +23,8 @@ from utils import generate_avg_results, generate_avg_norm_file, generate_gaze_no
 # Main figure
 ############################################################################################################
 
-# f2.b: bar plot for response time
-# plot_bar('dataset/user_avg_norm.csv',datatype = 'resptime_norm')
+# f2.b: box plot for response time in long duration with distraction
+# plot_box('dataset/user_avg_norm.csv',datatype = 'resptime_norm')
 
 # f2.c: distribution plot for response time
 # visual_distribution_all('dataset/user_avg_norm.csv',None,'resptime_norm')
@@ -36,8 +36,8 @@ from utils import generate_avg_results, generate_avg_norm_file, generate_gaze_no
 # f2.a: heatmap for gaze entropy
 # visual_heatmap_individual('dataset/user_avg_norm.csv',None,'gaze_entropy_limit_norm')
 
-# f2.e: bar plot for gaze entropy
-# plot_bar('dataset/user_avg_norm.csv',datatype = 'gaze_entropy_limit_norm')
+# f2.e: bar plot for gaze entropy in long duration with distraction 
+# plot_box('dataset/user_avg_norm.csv',datatype = 'gaze_entropy_limit_norm')
 
 ############################################################################################################
 # Appendix figure
