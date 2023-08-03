@@ -36,7 +36,7 @@ from utils import generate_avg_results, generate_avg_norm_file, generate_gaze_no
 # f2.a: heatmap for gaze entropy
 # visual_heatmap_individual('dataset/user_avg_norm.csv',None,'gaze_entropy_limit_norm')
 
-# f2.e: bar plot for gaze entropy in long duration with distraction 
+# f2.e: box plot for gaze entropy in long duration with distraction 
 # plot_box('dataset/user_avg_norm.csv',datatype = 'gaze_entropy_limit_norm')
 
 ############################################################################################################
