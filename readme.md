@@ -1,6 +1,6 @@
-# Tactile Bodily Gaze Mapping Could Regulate Human Attention
+# Oculomotor trajectory mapping on body as an effective intervention to enhance attention
 
-This code is used to replicate the results, analysis and figures in the paper named "Tactile Bodily Gaze Mapping Could Regulate Human Attention". For arXiv version of this paper, see here. 
+This code is used to replicate the results, analysis and figures in the paper named "Oculomotor trajectory mapping on body as an effective intervention to enhance attention". 
 
 ## File Structure
 
@@ -16,7 +16,6 @@ This code is used to replicate the results, analysis and figures in the paper na
 - Run the code block one by one in order to process the raw dataset and plot figures.
 
 
-## Cite Us
 
 
 
