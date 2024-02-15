@@ -1,6 +1,6 @@
-# Oculomotor trajectory mapping on body as an effective intervention to enhance attention
+# Self-regulating attention via synchronized bodily maps of oculomotor trajectory
 
-This code is used to replicate the results, analysis and figures in the paper named "Oculomotor trajectory mapping on body as an effective intervention to enhance attention". 
+This code is used to replicate the results, analysis and figures in the paper named "Self-regulating attention via synchronized bodily maps of oculomotor trajectory". 
 
 ## File Structure
 
