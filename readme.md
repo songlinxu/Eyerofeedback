@@ -11,7 +11,7 @@ This code is used to replicate the results, analysis and figures in the paper na
 
 ## Steps to Replicate the Results and Figures in the Paper
 
-- Download gaze data from [here](https://drive.google.com/file/d/15nFU209As_d3IHG9erc7IfIu_Bdjwd-7/view?usp=sharing) and [here](https://drive.google.com/file/d/1zOsSbQPnWU-mQOlOUGsJ5Da9KZu0t2ZO/view?usp=sharing) and put them into the dataset folder.
+- Download gaze_all_norm_ext.csv from [here](https://drive.google.com/file/d/1dyKr52d0koPx_aMx0z9jIStWJTzewGfi/view?usp=sharing) and gaze_all_norm.csv from [here](https://drive.google.com/file/d/1besdlX_YSMztOnPWem0Or5Wuw9-4WHOr/view?usp=sharing) and gaze_all.csv from [here](https://drive.google.com/file/d/18OxJKmlnBO77B-TDfvZitxe2iQmWVdtF/view?usp=sharing) and put them into the dataset folder.
 
 - Run the code block one by one in order to process the raw dataset and plot figures.
 
